@@ -55,12 +55,13 @@ Semantic Understanding: The foundational assumption was that prompt engineering 
 
 #### Trade-off and Decision:
 
-Computational Intensity: Acknowledging the advantage of improved semantic understanding through prompt engineering, it was also recognized that this approach often comes with increased computational intensity. A conscious trade-off was made between the computational complexity and the need for semantic richness. The decision aimed at striking a balance between model performance and computational efficiency.
+Computational Intensity: Acknowledging the advantage of improved semantic understanding through prompt engineering, a conscious trade-off was made between computational complexity and semantic richness. Balancing model performance and computational efficiency became pivotal to meet project goals.
 
-Time Constraints: Considering the real-time nature of the application and the importance of delivering prompt results, a decision was made to prioritize the current implementation. The emphasis was on achieving a balance between accuracy and speed, aligning with the overarching goal of creating a user-friendly tool that provides efficient recommendations. This decision reflects a pragmatic approach to meet the practical needs of users within time constraints.
+Time Constraints: Given the time constraints imposed by the interview process, there was a need to prioritize the current implementation. Emphasis was placed on achieving a practical balance between accuracy and speed to create a user-friendly tool within the given timeframe.
+
 ### Future Consideration
 
-Should I be selected as an intern, I am enthusiastic about the prospect of delving deeper into the intricacies of prompt engineering. I am particularly interested in exploring more computationally intensive implementations, leveraging advanced natural language understanding models such as BERT. This avenue has the potential to yield a more nuanced semantic understanding, leading to even more precise recommendations. I am eager to collaborate on refining and expanding the tool, aligning it with evolving requirements and pushing the boundaries of its capabilities.
+Aspiring to contribute further, if selected as an intern, I am eager to delve into the intricacies of prompt engineering. Exploring more computationally intensive implementations, such as leveraging advanced models like BERT, holds promise for nuanced semantic understanding and precise recommendations. I look forward to collaborating on refining and expanding the tool, aligning it with evolving requirements and pushing its capabilities to new heights.
 
 ## How to Run Locally
 
