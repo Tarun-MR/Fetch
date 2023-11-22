@@ -77,7 +77,7 @@ Interest in exploring more computationally intensive implementations with advanc
     python final.py
     ```
 
-5. Open your web browser and go to [http://127.0.0.1:9010/](http://127.0.0.1:9010/) to access the Offer Recommendation Dashboard.
+5. Open your web browser and go to [http://127.0.0.1:9030/](http://127.0.0.1:9030/) to access the Offer Recommendation Dashboard.
 
 ## Dependencies
 
@@ -111,7 +111,7 @@ If you encounter any issues while running the tool, consider the following troub
      print(f" * Running on http://{host}:{port}/ (Press CTRL+C to quit)")
      app.run_server(debug=True, port=9030)
      ```
-
+    make sure to update the port in app.run_server as well
 2. **File Paths:**
    - Ensure that the required CSV files (`offer_retailer.csv`, `brand_category.csv`, `categories.csv`) are present in the specified file paths.
    - Check and provide the correct file paths if there are "file not found" errors.
