@@ -79,14 +79,6 @@ Interest in exploring more computationally intensive implementations with advanc
 
 5. Open your web browser and go to [http://127.0.0.1:9030/](http://127.0.0.1:9030/) to access the Offer Recommendation Dashboard.
 
-## Dependencies
-
-- Dash (version x.x.x)
-- pandas (version x.x.x)
-- scikit-learn (version x.x.x)
-- NLTK (version x.x.x)
-- Other libraries specified in requirements.txt
-
 ## File Structure
 
 - `final.py`: Main script implementing the offer recommendation dashboard.
