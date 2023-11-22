@@ -43,11 +43,22 @@ In addressing the challenge, a multifaceted approach was taken, focusing on simp
 
 4. **User Interaction:** Intentional minimalistic design for ease of use.
 
-#### Prompt Engineering Consideration
+### Prompt Engineering Consideration
 
-Considered prompt engineering for semantic understanding but prioritized the current implementation for computational efficiency.
+#### Overview:
 
-#### Future Consideration
+In the development of the recommendation tool, a key consideration was given to prompt engineering—a technique involving the construction of specialized queries or prompts to enhance the model's understanding of user queries. This section outlines the assumptions made, the benefits anticipated, and the trade-offs considered in implementing prompt engineering.
+
+#### Assumption:
+
+Semantic Understanding: The foundational assumption was that prompt engineering would significantly contribute to capturing the semantic meaning embedded in user queries. For instance, when a user searches for a specific brand like "Huggies," prompt engineering might aid in extracting related keywords such as "diapers," "kids," or other pertinent categories.
+
+#### Trade-off and Decision:
+
+Computational Intensity: Acknowledging the advantage of improved semantic understanding through prompt engineering, it was also recognized that this approach often comes with increased computational intensity. A conscious trade-off was made between the computational complexity and the need for semantic richness. The decision aimed at striking a balance between model performance and computational efficiency.
+
+Time Constraints: Considering the real-time nature of the application and the importance of delivering prompt results, a decision was made to prioritize the current implementation. The emphasis was on achieving a balance between accuracy and speed, aligning with the overarching goal of creating a user-friendly tool that provides efficient recommendations. This decision reflects a pragmatic approach to meet the practical needs of users within time constraints.
+### Future Consideration
 
 Interest in exploring more computationally intensive implementations with advanced NLP models for richer semantic understanding and precise recommendations.
 
