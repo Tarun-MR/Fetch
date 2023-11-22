@@ -60,7 +60,7 @@ Computational Intensity: Acknowledging the advantage of improved semantic unders
 Time Constraints: Considering the real-time nature of the application and the importance of delivering prompt results, a decision was made to prioritize the current implementation. The emphasis was on achieving a balance between accuracy and speed, aligning with the overarching goal of creating a user-friendly tool that provides efficient recommendations. This decision reflects a pragmatic approach to meet the practical needs of users within time constraints.
 ### Future Consideration
 
-Interest in exploring more computationally intensive implementations with advanced NLP models for richer semantic understanding and precise recommendations.
+Should I be selected as an intern, I am enthusiastic about the prospect of delving deeper into the intricacies of prompt engineering. I am particularly interested in exploring more computationally intensive implementations, leveraging advanced natural language understanding models such as BERT. This avenue has the potential to yield a more nuanced semantic understanding, leading to even more precise recommendations. I am eager to collaborate on refining and expanding the tool, aligning it with evolving requirements and pushing the boundaries of its capabilities.
 
 ## How to Run Locally
 
