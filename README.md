@@ -1,110 +1,155 @@
-# Offer Recommendation Dashboard
+# Data Scientist NLP Apprenticeship Take-Home
 
 ## Introduction
 
-This Python script, `final.py`, implements an offer recommendation dashboard using Dash, a Python framework for building analytical web applications. The dashboard recommends offers based on user input and utilizes natural language processing (NLP) techniques.
+Welcome to the Fetch Data Scientist NLP Apprenticeship Take-Home project! This assignment involves building a tool that empowers users to intelligently search for offers via text input. The goal is to enhance user experience and provide valuable recommendations for both users and Fetch partners.
 
-## Approach
+## Problem Statement
 
-In addressing the challenge of enabling intelligent offer searches through text input, a multifaceted approach was taken with a primary focus on simplicity, efficiency, and user experience. The following summarizes the key aspects of the approach:
+Fetch provides value to its user base through a variety of active offers in the app. The objective is to enable users to easily seek out relevant offers using a text-based search. This requires building a tool that can intelligently understand user queries and recommend offers based on categories, brands, and retailers.
 
-### Assumptions
+## Acceptance Criteria
 
-1. **Text Preprocessing:** Robust text preprocessing, including lemmatization, stop-word removal, and tokenization, is crucial for accurate similarity measurements.
+- If a user searches for a category (e.g., diapers), the tool should return a list of offers relevant to that category.
+- If a user searches for a brand (e.g., Huggies), the tool should return a list of offers relevant to that brand.
+- If a user searches for a retailer (e.g., Target), the tool should return a list of offers relevant to that retailer.
+- The tool should also return the score used to measure the similarity of the text input with each offer.
 
-2. **Similarity Score:** A combination of basic text similarity via difflib's SequenceMatcher and a more advanced TF-IDF approach is used to balance accuracy and computational efficiency.
+## Solution Overview
 
-3. **Keyword Extraction:** Extracting keywords from user input and offer descriptions enhances relevancy assessments. The chosen CountVectorizer method is straightforward for simplicity.
+### Approach
 
-4. **Duplicate Removal:** Eliminating duplicate offers with higher similarity scores improves user experience by providing concise and relevant recommendations.
+In addressing the challenge, a multifaceted approach was taken, focusing on simplicity, efficiency, and user experience:
 
-5. **User Interface:** The Dash web application provides a clear and interactive interface for users to input queries and receive offer recommendations.
+#### Assumptions
 
-### Trade-offs
+1. **Text Preprocessing:** Robust preprocessing, including lemmatization, stop-word removal, and tokenization, is crucial for accurate similarity measurements.
 
-1. **Complexity vs. Performance:** Algorithmic complexity is traded off to maintain performance, prioritizing a solution that remains computationally efficient, especially in a real-time application.
+2. **Similarity Score:** A combination of basic text similarity and advanced TF-IDF is used for accuracy and computational efficiency.
 
-2. **Threshold for Duplicate Removal:** The duplicate removal threshold is set at a similarity score of 0.8, involving a trade-off between precision and recall.
+3. **Keyword Extraction:** Extracting keywords enhances relevancy assessments using a straightforward CountVectorizer method.
 
-3. **Keyword Extraction Method:** CountVectorizer is chosen for its simplicity, with potential exploration of more advanced methods in the future.
+4. **Duplicate Removal:** Eliminating duplicate offers with higher similarity scores improves user experience.
 
-4. **User Interaction:** The web app interface is intentionally kept minimalistic for ease of use, balancing simplicity and functionality.
+5. **User Interface:** Dash web application for clear and interactive user input and recommendation display.
 
-### Prompt Engineering Consideration
+#### Trade-offs
 
-While prompt engineering for semantic understanding was considered, the decision was made to prioritize the current implementation due to computational intensity concerns, ensuring a balance between accuracy and response time.
+1. **Complexity vs. Performance:** Maintaining computational efficiency while balancing algorithmic complexity.
 
-### Future Consideration
+2. **Threshold for Duplicate Removal:** A trade-off between precision and recall in setting the duplicate removal threshold.
 
-Given the opportunity, there is interest in exploring a more computationally intensive implementation with advanced NLP models like BERT for richer semantic understanding and even more precise recommendations. Collaboration is welcomed to refine and expand the tool based on evolving requirements.
+3. **Keyword Extraction Method:** CountVectorizer chosen for simplicity.
 
-## How to Run
+4. **User Interaction:** Intentional minimalistic design for ease of use.
 
-1. Open your terminal in the directory containing `final.py`. If you are using Jupyter Notebook, navigate to the directory using the following commands:
+#### Prompt Engineering Consideration
+
+Considered prompt engineering for semantic understanding but prioritized the current implementation for computational efficiency.
+
+#### Future Consideration
+
+Interest in exploring more computationally intensive implementations with advanced NLP models for richer semantic understanding and precise recommendations.
+
+## How to Run Locally
+
+1. Clone the repository to your local machine:
 
     ```bash
-    cd Documents/Fetch
+    git clone https://github.com/yourusername/yourrepository.git
     ```
 
-2. Run the `final.py` script:
+2. Navigate to the project directory:
+
+    ```bash
+    cd yourrepository
+    ```
+
+3. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Run the script:
 
     ```bash
     python final.py
     ```
 
-3. Open your web browser and navigate to [http://127.0.0.1:9010/](http://127.0.0.1:9010/) to access the Offer Recommendation Dashboard.
+5. Open your web browser and go to [http://127.0.0.1:9010/](http://127.0.0.1:9010/) to access the Offer Recommendation Dashboard.
 
-## Code Explanation
+## Dependencies
 
-The script performs the following tasks:
+- Dash (version x.x.x)
+- pandas (version x.x.x)
+- scikit-learn (version x.x.x)
+- NLTK (version x.x.x)
+- Other libraries specified in requirements.txt
 
-1. **Package Installation:** Installs or upgrades necessary Python packages using the `pip` command.
+## File Structure
 
-2. **Imports:** Imports required libraries and modules, including Dash, pandas, scikit-learn, NLTK, and others.
+- `final.py`: Main script implementing the offer recommendation dashboard.
+- `offer_retailer.csv`: Dataset containing offers and associated metadata.
+- `brand_category.csv`: Dataset containing supported brands and their categories.
+- `categories.csv`: Dataset containing product categories.
 
-3. **NLTK Data Download:** Downloads essential data for Natural Language Toolkit (NLTK).
+## Walkthrough Video
 
-4. **Dash App Initialization:** Initializes the Dash app with the Bootstrap theme.
-
-5. **Text Processing Functions:** Defines functions for text processing, similarity score calculation, and recommendation generation.
-
-6. **Data Loading:** Loads data from CSV files using pandas and merges relevant dataframes.
-
-7. **Dash Layout Definition:** Defines the layout of the Dash app, including input fields, buttons, and output display.
-
-8. **Callback Function:** Defines a callback function to update the output display based on user input.
-
-9. **Data Preprocessing:** Preprocesses the loaded data by tokenizing, lemmatizing, and combining relevant text columns.
-
-10. **TF-IDF Vectorization:** Uses TF-IDF vectorization to convert text data into numerical vectors.
-
-11. **Server Initialization:** Runs the Dash app server on a specified host and port.
-
-## Usage
-
-1. Enter a search query in the provided input field.
-
-2. Click the "Submit" button to trigger the recommendation generation.
-
-3. View the recommended offers and their similarity scores in the output section.
-
-## Walkthrough 
-
-
-There is a walkthrough video in the repository. It is named Walkthrough.mp4. Visit it to see how i run this code.
+- [Walkthrough Video](https://github.com/yourusername/yourrepository/Walkthrough.mp4](https://github.com/Tarun-MR/Fetch/blob/main/Walkthrough.mp4))
 
 ## Troubleshooting
 
-If there are issues running the script, ensure that the required CSV files (`offer_retailer.csv`, `brand_category.csv`, and `categories.csv`) are present in the specified file paths.
+If you encounter any issues while running the tool, consider the following troubleshooting steps:
 
-In case of file not found errors, check and provide the correct file paths.
+1. **Server Configuration:**
+   - If you face difficulties, the likely culprit may be hosting on the same server. To address this, contemplate adjusting the server configuration in the final section of the code.
+   - Specifically, alter the port value in the "port" variable to any number within the range of 8000 to 12000. Here's the relevant code snippet:
 
-## Troubleshooting - Changing Server Configuration
+     ```python
+     port = 9030  # Adjust the port if connection issues arise
+     print(f" * Running on http://{host}:{port}/ (Press CTRL+C to quit)")
+     app.run_server(debug=True, port=9030)
+     ```
 
-If you encounter issues, mostly due to hosting on the same server, consider changing the server configuration in the last part of the code. Modify the `host` and `port` variables in the following section of the code:
+2. **File Paths:**
+   - Ensure that the required CSV files (`offer_retailer.csv`, `brand_category.csv`, `categories.csv`) are present in the specified file paths.
+   - Check and provide the correct file paths if there are "file not found" errors.
 
-```python
-port = 9030  # Change port if there is a connection issue
-print(f" * Running on http://{host}:{port}/ (Press CTRL+C to quit)")
-app.run_server(debug=True, port=9030)
+3. **Error Handling:**
+   - If you encounter any issues, refer to this troubleshooting section and ensure dependencies are correctly installed.
 
+## Deployment Options
+
+Consider different deployment options, such as deploying on a cloud platform or integrating with an existing system.
+
+## Acknowledgments
+
+We acknowledge the contributions of third-party tools and libraries used in this project.
+
+## Security Considerations
+
+Include any relevant security considerations or best practices, especially if the tool involves handling sensitive data.
+## Error Handling
+
+If you encounter issues, refer to the troubleshooting section and ensure dependencies are correctly installed.
+
+## Deployment Options
+
+Consider different deployment options, such as deploying on a cloud platform or integrating with an existing system.
+
+## Acknowledgments
+
+We acknowledge the contributions of third-party tools and libraries used in this project.
+
+## Security Considerations
+
+Include any relevant security considerations or best practices, especially if the tool involves handling sensitive data.
+
+## User Guide
+
+1. Enter a search query in the provided input field.
+2. Click the "Submit" button to trigger the recommendation generation.
+3. View the recommended offers and their similarity scores in the output section.
+
+Feel free to explore and adapt the tool based on your evolving requirements. Collaboration is welcomed to refine and expand the tool further.
