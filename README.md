@@ -67,22 +67,16 @@ Should I be selected as an intern, I am enthusiastic about the prospect of delvi
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/yourrepository.git
+    git clone https://github.com/Tarun-MR/Fetch
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd yourrepository
+    cd Fetch
     ```
 
-3. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the script:
+3. Run the script:
 
     ```bash
     python final.py
