@@ -25,7 +25,7 @@ In addressing the challenge, a multifaceted approach was taken, focusing on simp
 
 1. **Text Preprocessing:** Robust preprocessing, including lemmatization, stop-word removal, and tokenization, is crucial for accurate similarity measurements.
 
-2. **Similarity Score:** A combination of basic text similarity and advanced TF-IDF is used for accuracy and computational efficiency.
+2. **Similarity Score:** A combination of cosine similarity and advanced TF-IDF is used for accuracy and computational efficiency.
 
 3. **Keyword Extraction:** Extracting keywords enhances relevancy assessments using a straightforward CountVectorizer method.
 
