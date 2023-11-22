@@ -115,28 +115,9 @@ If you encounter any issues while running the tool, consider the following troub
 
 Consider different deployment options, such as deploying on a cloud platform or integrating with an existing system.
 
-## Acknowledgments
-
-We acknowledge the contributions of third-party tools and libraries used in this project.
-
-## Security Considerations
-
-Include any relevant security considerations or best practices, especially if the tool involves handling sensitive data.
 ## Error Handling
 
 If you encounter issues, refer to the troubleshooting section and ensure dependencies are correctly installed.
-
-## Deployment Options
-
-Consider different deployment options, such as deploying on a cloud platform or integrating with an existing system.
-
-## Acknowledgments
-
-We acknowledge the contributions of third-party tools and libraries used in this project.
-
-## Security Considerations
-
-Include any relevant security considerations or best practices, especially if the tool involves handling sensitive data.
 
 ## User Guide
 
